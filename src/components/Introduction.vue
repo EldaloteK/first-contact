@@ -1,6 +1,6 @@
 <template>
   <div class="introduction">
-    <img class="placeholder-bg" src="../assets/treePlaceholderBg.png" />
+    <img class="placeholder-bg" src="../assets/treePlaceholderBg.jpg" />
   </div>
 </template>
 
