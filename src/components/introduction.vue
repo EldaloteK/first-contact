@@ -1,6 +1,6 @@
 <template>
   <div class="introduction">
-    Work in progress.
+    Work in progress..
   </div>
 </template>
 
