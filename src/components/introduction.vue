@@ -1,6 +1,6 @@
 <template>
   <div class="introduction">
-    Work in progress..
+    <img class="placeholder-bg" src="../assets/treeBg.png" />
   </div>
 </template>
 
@@ -21,5 +21,10 @@ export default {
 .introduction {
   display: flex;
   flex-direction: column;
+}
+
+.placeholder-bg {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 </style>
