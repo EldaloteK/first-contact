@@ -1,20 +1,30 @@
 <template>
-  <div class="portfolio">
-    TODO
+  <div class="introduction">
+    <img class="placeholder-bg" src="../assets/treePlaceholderBg.png" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Introduction',
+  name: "Introduction",
   props: {
     msg: String
   }
-}
+};
 </script>
 
-<style scoped>
-.portfolio {
-  display: grid;
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholder-bg {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 </style>
