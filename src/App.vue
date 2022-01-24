@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Introduction from './components/introduction.vue'
+import Introduction from './views/introduction.vue'
 
 export default {
   name: 'App',
@@ -13,9 +13,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+html,
 body{
   margin: 0;
+  height: 100%;
+  background-color: #F2EDE7;
 }
 #app {
   box-sizing: border-box;
