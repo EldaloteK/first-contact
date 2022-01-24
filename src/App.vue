@@ -7,6 +7,9 @@ import Introduction from "./views/introduction.vue";
 
 export default {
   name: "App",
+  mounted() {
+    document.title = "First Contact";
+  },
   components: {
     Introduction,
   },

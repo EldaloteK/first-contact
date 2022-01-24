@@ -10,7 +10,7 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
-      <title>entrance-door</title>
+      <title>Home</title>
       <g
         id="room-contents"
         stroke="none"
@@ -88,7 +88,7 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
-      <title>gear-graph</title>
+      <title>Projects</title>
       <g
         id="room-contents"
         stroke="none"
@@ -327,7 +327,7 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
-      <title>window-camera</title>
+      <title>Photography</title>
       <g
         id="room-contents"
         stroke="none"
@@ -427,7 +427,12 @@ export default {
 * {
   box-sizing: border-box;
 }
+
 .left-navigation-container {
+  .nav-button {
+    cursor: pointer;
+  }
+
   @media (min-width: 0px) and (max-width: 767px) {
     display: flex;
     margin-top: 0px;
@@ -439,9 +444,11 @@ export default {
     flex-direction: column;
     margin-top: 15px;
     align-items: center;
+
     svg + svg {
       margin-top: 15px;
     }
+
     .gear-graph-button {
       margin-top: 20px;
     }
