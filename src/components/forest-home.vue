@@ -1420,15 +1420,16 @@ export default {
 .forest-home-svg {
   .raccoon-upper-should-move {
     .raccoon-head {
+      transform: translate(42.350598px, 54.215255px) rotate(35deg)
+        translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
       -ms-transform: translate(42.350598px, 54.215255px) rotate(35deg)
         translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
-      -webkit-transform: translate(42.350598px, 54.215255px) rotate(35deg)
-        translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
+      -webkit-transform: translate3d(42.350598px, 54.215255px, 0px)
+        rotate(35deg) translate3d(-42.350598px, -60.215255px, 0px)
+        translate3d(9.186393px, 28.434662px, 0px);
       -moz-transform: translate(42.350598px, 54.215255px) rotate(35deg)
         translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
       -o-transform: translate(42.350598px, 54.215255px) rotate(35deg)
-        translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
-      transform: translate(42.350598px, 54.215255px) rotate(35deg)
         translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
     }
   }
