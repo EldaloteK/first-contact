@@ -703,11 +703,7 @@
                 transform="translate(76.379922, 32.586153) rotate(3.000000) translate(-76.379922, -32.586153) "
               ></path>
             </g>
-            <g
-              id="Group"
-              class="raccoon-head"
-              transform="translate(42.350598, 60.215255) rotate(21.000000) translate(-42.350598, -60.215255) translate(9.186393, 28.434662)"
-            >
+            <g id="Group" class="raccoon-head">
               <path
                 d="M27.5480273,61.4673626 C45.8019471,60.470178 58.327568,35.3782817 66.3284087,30.4952037 C57.2036148,26.3528557 42.8990196,2.92147237 24.6546066,3.91813759 C14.0333015,4.49836374 6.30568625,19.347334 7.02904142,33.7346402 C7.75239659,48.1219465 18.4196158,61.9660342 27.5480273,61.4673626 Z"
                 id="Oval"
@@ -1418,34 +1414,21 @@ export default {
   box-sizing: border-box;
 }
 .forest-home-svg {
+  :not(.raccoon-upper-should-move) {
+    .raccoon-head {
+      transform: translate(42.350598px, 60.215255px) rotate(21deg)
+        translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
+    }
+  }
   .raccoon-upper-should-move {
     .raccoon-head {
       transform: translate(42.350598px, 54.215255px) rotate(35deg)
         translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
-      -ms-transform: translate(42.350598px, 54.215255px) rotate(35deg)
-        translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
-      -webkit-transform: translate3d(42.350598px, 54.215255px, 0px)
-        rotate(35deg) translate3d(-42.350598px, -60.215255px, 0px)
-        translate3d(9.186393px, 28.434662px, 0px);
-      -moz-transform: translate(42.350598px, 54.215255px) rotate(35deg)
-        translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
-      -o-transform: translate(42.350598px, 54.215255px) rotate(35deg)
-        translate(-42.350598px, -60.215255px) translate(9.186393px, 28.434662px);
     }
   }
-  // .raccoon-upper-should-move {
-  //   transform: translate(203.055492px, 20.056787px);
-  //   .front-right-leg {
-  //     transform: translate(27.719548px, 32.951475px) rotate(-29deg)
-  //       translate(-27.719548px, -32.951475px);
-  //   }
-  //   .rear-right-leg {
-  //     transform: translate(76.379922px, 32.586153px) rotate(14deg)
-  //       translate(-76.379922px, -32.586153px);
-  //   }
-  // }
   .raccoon-head {
     transition: transform 0.55s ease;
+    -webkit-transition: -webkit-transform 0.55s ease;
   }
   .owl:hover {
     .owl-wing-front {
