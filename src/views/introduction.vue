@@ -1,22 +1,22 @@
 <template>
   <div class="introduction">
-    <Navigation @navChoice="performNavSelection" />
-    <div class="main-room">
-      <ForestHome v-show="navChoice == 1" :move-raccoon="moveRaccoon" />
-      <Projects v-show="navChoice == 2" />
+    <Navigation :class="{ 'view-not-forest': navChoice != 1 }" />
+    <div class="main-view">
+      <div class="main-view-left">
+        <LeftNavigation @navChoice="performNavSelection" />
+      </div>
+      <div class="main-view-right">
+        <ForestHome v-show="navChoice == 1" :move-raccoon="moveRaccoon" />
+        <Projects v-show="navChoice == 2" />
+      </div>
     </div>
-    <!-- <defs>
-            <pattern id="pattern-1" patternUnits="objectBoundingBox" y="-103.986539%" height="203.986539%" width="100%">
-                <use href="#image-2" transform="scale(1.03622597,1.03622597)"></use>
-            </pattern>
-            <image id="image-2" width="800" height="1200" href="src/assets/bubingaWood1.jpeg"></image>
-        </defs> -->
   </div>
 </template>
 
 <script>
 import Navigation from "../components/navigation.vue";
 import ForestHome from "../components/forest-home.vue";
+import LeftNavigation from "../components/left-navigation.vue";
 import Projects from "../components/projects.vue";
 import { ref } from "vue";
 
@@ -24,6 +24,7 @@ export default {
   name: "Introduction",
   components: {
     ForestHome,
+    LeftNavigation,
     Navigation,
     Projects,
   },
@@ -43,7 +44,7 @@ export default {
       // navChoice.value = choice;
       if (choice === 2) {
         moveRaccoon.value = true;
-        setTimeout(() => onChoiceTwo(choice), 1000);
+        setTimeout(() => onChoiceTwo(choice), 800);
       } else {
         navChoice.value = choice;
       }
@@ -64,23 +65,28 @@ export default {
 }
 
 .introduction {
-  // margin-top: 8px;
   display: grid;
-  // grid-template-rows: 12% 88%;
   grid-template-areas: "top" "middle";
-  .navigation {
-    background-color: #f2ede7;
+  .nav-container {
+    background-color: #f3d6c3;
     grid-area: top;
   }
-  .main-room {
-    // border-top: 5px double #A0430B30;
+  .main-view {
     padding: 10px 15px 30px 15px;
     grid-area: middle;
-    display: flex;
-    flex-direction: column;
+
+    @media (min-width: 640px) and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+
     .forest-home-svg {
       padding: 10px 15px 30px 15px;
-      // max-height: 670px;
     }
   }
 }

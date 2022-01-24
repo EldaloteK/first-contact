@@ -3,22 +3,22 @@
 </template>
 
 <script>
-import Introduction from './views/introduction.vue'
+import Introduction from "./views/introduction.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Introduction
-  }
-}
+    Introduction,
+  },
+};
 </script>
 
 <style lang="scss">
 html,
-body{
+body {
   margin: 0;
   height: 100%;
-  background-color: #F2EDE7;
+  background-color: #f2ede7;
 }
 #app {
   box-sizing: border-box;

@@ -213,8 +213,8 @@
           fill="#F2EDE7"
           x="0"
           y="0"
-          width="918"
-          height="457"
+          width="0"
+          height="0"
         ></rect>
         <g id="floor-2" transform="translate(15.500000, 393.000000)">
           <mask id="mask-3" fill="white">
