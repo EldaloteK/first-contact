@@ -86,7 +86,8 @@ export default {
     }
 
     .forest-home-svg {
-      padding: 10px 15px 30px 15px;
+      padding-top: 10px;
+      padding-bottom: 30px;
     }
   }
 }
