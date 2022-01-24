@@ -439,6 +439,12 @@ export default {
     flex-direction: column;
     margin-top: 15px;
     align-items: center;
+    svg + svg {
+      margin-top: 15px;
+    }
+    .gear-graph-button {
+      margin-top: 20px;
+    }
   }
 }
 </style>
