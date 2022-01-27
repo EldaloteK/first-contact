@@ -1,21 +1,17 @@
 <template>
   <div class="projects-container">
-    <ForestAnimal />
-    <div class="projects-navigation">
-      <div class="creative-category"></div>
-      <div class="scientific-category"></div>
-      <div class="development-category"></div>
-    </div>
+    <div class="projects-image"><RaccoonDesk /></div>
+    <div class="projects-navigation"></div>
   </div>
 </template>
 
 <script>
-import ForestAnimal from "../components/forest-animal.vue";
+import RaccoonDesk from "../components/raccoon-desk.vue";
 
 export default {
   name: "Projects",
   components: {
-    ForestAnimal,
+    RaccoonDesk,
   },
 };
 </script>
@@ -26,8 +22,18 @@ export default {
 }
 
 .projects-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  .projects-image + .projects-navigation {
+    margin-left: 30px;
+  }
   .projects-navigation {
-    display: flex;
+    background-color: #f5f0ec;
+    font-family: Helvetica;
+    font-style: italic;
+    color: #5a1000;
+    font-size: 30px;
   }
 }
 </style>

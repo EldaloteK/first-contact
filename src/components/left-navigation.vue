@@ -436,7 +436,7 @@ export default {
   @media (min-width: 0px) and (max-width: 767px) {
     display: flex;
     margin-top: 0px;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   @media (min-width: 768px) {
