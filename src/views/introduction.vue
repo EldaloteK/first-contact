@@ -41,8 +41,7 @@ export default {
     }
 
     function performNavSelection(choice) {
-      // navChoice.value = choice;
-      if (choice === 2) {
+      if (choice === 2 && navChoice.value == 1) {
         moveRaccoon.value = true;
         setTimeout(() => onChoiceTwo(choice), 800);
       } else {
@@ -75,7 +74,7 @@ export default {
     padding: 10px 15px 30px 15px;
     grid-area: middle;
 
-    @media (min-width: 640px) and (max-width: 767px) {
+    @media (min-width: 0px) and (max-width: 767px) {
       display: flex;
       flex-direction: column;
     }

@@ -25,10 +25,11 @@ body {
 }
 #app {
   box-sizing: border-box;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: auto;
+  font-style: italic;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #5a1000;
 }
 </style>
