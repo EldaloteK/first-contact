@@ -22,22 +22,29 @@
         <img class="save-the-lynx" src="../assets/save-the-lynx-game-ss.png" />
       </div>
       <div class="single-project">
+        <ProjectHeader headerText="Art's Apothecary Dispatch" />
+        <p class="project-description">
+          A pharmaceutical delivery planner for the hospital environment. Based
+          on a recursive approach of Dijkstra's algorithm. (In process).
+        </p>
+      </div>
+      <!-- <div class="single-project">
         <ProjectHeader headerText="Virtual Wildlife" />
         <ForestAnimal />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import ForestAnimal from "../components/forest-animal.vue";
+// import ForestAnimal from "../components/forest-animal.vue";
 import ProjectHeader from "../components/project-header.vue";
 import RaccoonDesk from "../components/raccoon-desk.vue";
 
 export default {
   name: "Projects",
   components: {
-    ForestAnimal,
+    // ForestAnimal,
     ProjectHeader,
     RaccoonDesk,
   },
@@ -73,7 +80,7 @@ export default {
 
   .projects-content {
     .single-project + .single-project {
-      margin-top: 10px;
+      margin-top: 40px;
     }
     .single-project {
       .save-the-lynx {
