@@ -22,7 +22,7 @@
         <img class="save-the-lynx" src="../assets/save-the-lynx-game-ss.png" />
       </div>
       <div class="single-project">
-        <ProjectHeader headerText="Art's Apothecary Dispatch" />
+        <ProjectHeader headerText="The Apothecary Dispatch" />
         <p class="project-description">
           A pharmaceutical delivery planner for the hospital environment. Based
           on a recursive approach of Dijkstra's algorithm. (In process).
