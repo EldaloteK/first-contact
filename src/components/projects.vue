@@ -9,7 +9,10 @@
     </div>
     <div class="projects-content">
       <div class="single-project">
-        <ProjectHeader headerText="Save The Lynx Game" />
+        <ProjectHeader
+          headerText="Save The Lynx Game"
+          headerLink="https://github.com/EldaloteK/save-the-lynx-game"
+        />
         <p class="project-description">
           Save The Lynx Game is a two-player board game created to raise
           awarenesss of and depict the restoration of the Canadian lynx habitat.
@@ -68,10 +71,6 @@ export default {
 
     .projects-navigation {
       padding: 10px;
-      // background-color: #f5f0ec;
-      // font-family: auto;
-      // font-style: italic;
-      // color: #5a1000;
       font-size: 28px;
     }
 
@@ -87,11 +86,14 @@ export default {
     }
     .single-project {
       .save-the-lynx {
-        height: 700px;
+        max-height: 700px;
       }
       .project-description {
         font-size: 22px;
       }
+    }
+    img {
+      max-width: 100%;
     }
   }
 }

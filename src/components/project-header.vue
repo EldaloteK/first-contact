@@ -60,7 +60,9 @@
         </g>
       </g>
     </svg>
-    {{ headerText }}
+    <a :href="headerLink">
+      {{ headerText }}
+    </a>
   </div>
 </template>
 
@@ -68,6 +70,7 @@
 export default {
   name: "ProjectHeader",
   props: {
+    headerLink: String,
     headerText: String,
   },
 };
@@ -82,5 +85,8 @@ export default {
   display: flex;
   align-items: center;
   font-size: 28px;
+  a {
+    color: #5a1000;
+  }
 }
 </style>
