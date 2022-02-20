@@ -19,7 +19,10 @@
           several of the questions. That is also what enlightened me to include
           the algorithm in this project.
         </p>
-        <img class="save-the-lynx" src="../assets/save-the-lynx-game-ss.png" />
+        <img
+          class="save-the-lynx"
+          src="../assets/save-the-lynx-game-complete.png"
+        />
       </div>
       <div class="single-project">
         <ProjectHeader headerText="The Apothecary Dispatch" />
