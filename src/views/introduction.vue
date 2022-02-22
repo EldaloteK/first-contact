@@ -8,6 +8,7 @@
       <div class="main-view-right">
         <ForestHome v-show="navChoice == 1" :move-raccoon="moveRaccoon" />
         <Projects v-show="navChoice == 2" />
+        <Photography v-show="navChoice == 3" />
       </div>
     </div>
   </div>
@@ -18,6 +19,7 @@ import Navigation from "../components/navigation.vue";
 import ForestHome from "../components/forest-home.vue";
 import LeftNavigation from "../components/left-navigation.vue";
 import Projects from "../components/projects.vue";
+import Photography from "../components/photography.vue";
 import { ref } from "vue";
 
 export default {
@@ -26,6 +28,7 @@ export default {
     ForestHome,
     LeftNavigation,
     Navigation,
+    Photography,
     Projects,
   },
   props: {
