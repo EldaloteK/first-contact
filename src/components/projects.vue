@@ -24,7 +24,7 @@
         </p>
         <img
           class="save-the-lynx"
-          src="../assets/save-the-lynx-game-complete.png"
+          src="../assets/save-the-lynx-game-image.png"
         />
       </div>
       <div class="single-project">
