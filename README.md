@@ -1,7 +1,7 @@
 # first-contact
 
 ## See it for yourself!
-[first-contact](https://eldalotek.github.io/first-contact/)
+[first-contact](https://kristyeley.com)
 
 ## Project setup
 ```
