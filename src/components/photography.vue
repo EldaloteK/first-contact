@@ -1126,14 +1126,14 @@
       </div>
     </div>
     <div class="photography-content-container">
-      <div class="photography-content-r1">
+      <div class="photography-content-row photography-content-r1">
         <img class="leeuwarden-park" src="../assets/leeuwarden-park.jpg" />
         <img class="tree-mushrooms" src="../assets/tree-mushrooms.jpg" />
       </div>
-      <div class="photography-content-r2">
+      <div class="photography-content-row photography-content-r2">
         <img class="gus" src="../assets/gus.jpg" />
       </div>
-      <div class="photography-content-r3">
+      <div class="photography-content-row photography-content-r3">
         <img class="meadow" src="../assets/meadow.jpg" />
         <img class="meadow-ice" src="../assets/meadow-ice.jpg" />
       </div>
@@ -1169,24 +1169,34 @@ export default {
       flex-direction: column;
     }
   }
+
   .photography-content-container {
     padding: 10px;
     div + div {
       margin-top: 3px;
     }
+
     img {
       width: 100%;
       height: 100%;
     }
-    div {
-      display: grid;
-      grid-gap: 3px;
-    }
+
     .photography-content-r1 {
       grid-template-columns: 1fr 33.75%;
     }
+
     .photography-content-r3 {
       grid-template-columns: 50% 1fr;
+    }
+
+    .photography-content-row {
+      display: grid;
+      grid-gap: 3px;
+
+      @media (min-width: 0px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
