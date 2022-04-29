@@ -10,6 +10,17 @@
     <div class="projects-content">
       <div class="single-project">
         <ProjectHeader
+          headerText="The Apothecary Dispatch"
+          headerLink="https://github.com/EldaloteK/the-apothecary-dispatch"
+        />
+        <p class="project-description">
+          A pharmaceutical delivery planner for the hospital environment. Based
+          upon Dijkstra's algorithm and utilizes Docker, Flutter, Dart, Python
+          and Flask. (In process)
+        </p>
+      </div>
+      <div class="single-project">
+        <ProjectHeader
           headerText="Save The Lynx Game"
           headerLink="https://github.com/EldaloteK/save-the-lynx-game"
         />
@@ -28,29 +39,27 @@
         />
       </div>
       <div class="single-project">
-        <ProjectHeader headerText="The Apothecary Dispatch" />
-        <p class="project-description">
-          A pharmaceutical delivery planner for the hospital environment. Based
-          on a recursive approach of Dijkstra's algorithm. (In process).
-        </p>
-      </div>
-      <!-- <div class="single-project">
         <ProjectHeader headerText="Virtual Wildlife" />
+        <p class="project-description">
+          A virtual simulator created while learning more about developing with
+          SVG. This was the predecessor to this portfolio as I wanted to delve
+          into my artistic side while incorportating my technical skills.
+        </p>
         <ForestAnimal />
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import ForestAnimal from "../components/forest-animal.vue";
+import ForestAnimal from "../components/forest-animal.vue";
 import ProjectHeader from "../components/project-header.vue";
 import RaccoonDesk from "../components/raccoon-desk.vue";
 
 export default {
   name: "Projects",
   components: {
-    // ForestAnimal,
+    ForestAnimal,
     ProjectHeader,
     RaccoonDesk,
   },
