@@ -1,24 +1,4 @@
-# first-contact
+# A portfolio of my creative work which encompasses my development projects and photography.
 
 ## See it for yourself!
 [first-contact](https://kristyeley.com)
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
