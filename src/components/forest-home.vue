@@ -1427,7 +1427,7 @@
         </g>
       </g>
     </svg>
-    <div class="forest-home-header-container">
+    <!-- <div class="forest-home-header-container">
       <div class="forest-home-header-container-left">
         <div class="forest-home-header-text">
           Delve into the magical realm of Kristy's work as a Full-Stack Software
@@ -1897,16 +1897,24 @@
           </svg>
         </div>
       </div>
-    </div>
+      <div class="forest-home-header-container-right">
+        <CardSmall />
+      </div>
+    </div> -->
   </div>
 </template>
 
 <script>
+// import CardSmall from "../components/card-small.vue";
+
 export default {
   name: "ForestHome",
   props: {
     moveRaccoon: Boolean,
   },
+  // components: {
+  //   CardSmall,
+  // },
 };
 </script>
 
