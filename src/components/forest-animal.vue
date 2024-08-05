@@ -88,9 +88,9 @@
 </template>
 
 <script>
-import AnimalA from "./animal-a";
-import AnimalB from "./animal-b";
-import AnimalC from "./animal-c";
+import AnimalA from "./animal-a.vue";
+import AnimalB from "./animal-b.vue";
+import AnimalC from "./animal-c.vue";
 
 import { ref } from "vue";
 
