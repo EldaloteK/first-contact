@@ -1137,6 +1137,9 @@
         <img class="meadow" src="../assets/meadow.jpg" />
         <img class="meadow-ice" src="../assets/meadow-ice.jpg" />
       </div>
+      <div class="photography-content-row photography-content-r4">
+        <img class="meadow" src="../assets/woods-sunset.jpg" />
+      </div>
     </div>
   </div>
 </template>
