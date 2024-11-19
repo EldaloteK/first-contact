@@ -481,10 +481,7 @@ export default {
 }
 .nav-container {
   display: flex;
-  // padding-left: 80px;
   align-items: center;
-  // box-shadow: 0 4px 8px -5px #d9baa5;
-  box-shadow: 0 5px 15px -8px #d9baa5;
   .name-title {
     padding: 10px 5px 5px 5px;
   }

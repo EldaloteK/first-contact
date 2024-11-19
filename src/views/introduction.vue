@@ -70,7 +70,7 @@ export default {
   display: grid;
   grid-template-areas: "top" "middle";
   .nav-container {
-    background-color: #f3d6c3;
+    background-color: #EAE5DF;
     grid-area: top;
   }
   .main-view {
