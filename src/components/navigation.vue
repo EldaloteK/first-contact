@@ -274,11 +274,10 @@ export default {
   }
 
   @media (min-width: 0px) and (max-width: 800px) {
+    justify-content: center;
     .name-logo {
       display: none;
     }
-
-    justify-content: center;
   }
 }
 </style>
