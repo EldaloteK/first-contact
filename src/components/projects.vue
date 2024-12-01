@@ -38,28 +38,17 @@
           src="../assets/save-the-lynx-game-image.png"
         />
       </div>
-      <div class="single-project">
-        <ProjectHeader headerText="Virtual Wildlife" />
-        <p class="project-description">
-          A virtual simulator created while learning more about developing with
-          SVG. This was the predecessor to this portfolio as I wanted to delve
-          into my artistic side while incorportating my technical skills.
-        </p>
-        <ForestAnimal />
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-import ForestAnimal from "../components/forest-animal.vue";
 import ProjectHeader from "../components/project-header.vue";
 import RaccoonDesk from "../components/raccoon-desk.vue";
 
 export default {
   name: "Projects",
   components: {
-    ForestAnimal,
     ProjectHeader,
     RaccoonDesk,
   },
