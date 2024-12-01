@@ -956,7 +956,7 @@
             ></polygon>
             <polygon
               id="Path-7"
-              fill="#92936B"
+              fill="#723122"
               points="15.8006587 10 0 5 15.222688 0 31 3.88712844"
             ></polygon>
           </g>

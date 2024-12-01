@@ -1,23 +1,21 @@
 <template>
   <div class="introduction">
-    <Navigation :class="{ 'view-not-forest': navChoice != 1 }" />
+    <Navigation :class="{ 'view-not-forest': navChoice != 1 }" @navChoice="performNavSelection" />
     <div class="main-view">
-      <div class="main-view-left">
-        <LeftNavigation @navChoice="performNavSelection" />
-      </div>
       <div class="main-view-right">
         <ForestHome v-show="navChoice == 1" :move-raccoon="moveRaccoon" />
         <Projects v-show="navChoice == 2" />
         <Photography v-show="navChoice == 3" />
+        <Contact v-show="navChoice == 4" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Contact from "../components/contact.vue";
 import Navigation from "../components/navigation.vue";
 import ForestHome from "../components/forest-home.vue";
-import LeftNavigation from "../components/left-navigation.vue";
 import Projects from "../components/projects.vue";
 import Photography from "../components/photography.vue";
 import { ref } from "vue";
@@ -25,8 +23,8 @@ import { ref } from "vue";
 export default {
   name: "Introduction",
   components: {
+    Contact,
     ForestHome,
-    LeftNavigation,
     Navigation,
     Photography,
     Projects,
@@ -84,7 +82,7 @@ export default {
 
     @media (min-width: 768px) {
       display: grid;
-      grid-template-columns: 100px 1fr;
+      grid-template-columns: 1fr;
     }
 
     .forest-home-svg {

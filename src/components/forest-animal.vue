@@ -118,14 +118,9 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  background: #f2ede7;
   position: relative;
   display: flex;
   justify-content: center;
-  // .test {
-  //   max-width: 400px;
-  //   width: 100%;
-  // }
   .animal-button:hover {
     cursor: pointer;
   }

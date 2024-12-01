@@ -1,5 +1,5 @@
 <template>
-  <div class="card-small-container">dfkj</div>
+  <div class="card-small-container">Test</div>
 </template>
 
 <script>
@@ -14,8 +14,11 @@ export default {
 }
 
 .card-small-container {
-  border-radius: 4px;
-  width: 300px;
-  background: aliceblue;
+  display: flex;
+  border-radius: 10px;
+  background: #DECEC3;
+  width: 20rem;
+  box-sizing: border-box;
+  height: 50px;
 }
 </style>
