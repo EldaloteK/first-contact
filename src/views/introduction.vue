@@ -9,17 +9,23 @@
       </div>
     </div>
     <div class="footer">
-      <div class="social-item">
-        <a :href="`https://www.linkedin.com/in/kristymeley`" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/li-blue-small.png" :href="`https://www.linkedin.com/in/kristymeley`"
-            class="social-logo"></img>
-        </a>
+      <div class="footer-left">
+        <span>Software Engineer | PM | Mentor</span>
+        <span>kristy.eley@gmail.com</span>
       </div>
-      <div class="social-item">
-        <a :href="`https://github.com/EldaloteK`" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/github-mark.png" :href="`https://www.linkedin.com/in/kristymeley`"
-            class="social-logo"></img>
-        </a>
+      <div class="social-container">
+        <div class="social-item">
+          <a :href="`https://www.linkedin.com/in/kristymeley`" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/li-blue-small.png" :href="`https://www.linkedin.com/in/kristymeley`"
+              class="social-logo"></img>
+          </a>
+        </div>
+        <div class="social-item">
+          <a :href="`https://github.com/EldaloteK`" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/github-mark.png" :href="`https://www.linkedin.com/in/kristymeley`"
+              class="social-logo"></img>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -31,7 +37,7 @@ import Navigation from "../components/navigation.vue";
 import ForestHome from "../components/forest-home.vue";
 import Projects from "../views/projects.vue";
 import Photography from "../views/photography.vue";
-import { onMounted, useTemplateRef, ref } from "vue";
+import { useTemplateRef, ref } from "vue";
 
 export default {
   name: "Introduction",
@@ -56,7 +62,6 @@ export default {
     }
 
     function performNavSelection(choice) {
-      console.log('choice', choice);
       if (choice === 2 && navChoice.value == 1) {
         moveRaccoon.value = true;
         setTimeout(() => onChoiceTwo(choice), 800);
@@ -65,15 +70,9 @@ export default {
       }
 
       if (choice === 4) {
-        console.log(forestHomeRef);
         forestHomeRef.value.scrollTo();
       }
     }
-
-    onMounted(() => {
-      console.log('hjsdlfls')
-      console.log(forestHomeRef.value);
-    });
 
     return {
       moveRaccoon,
@@ -120,11 +119,24 @@ export default {
   .footer {
     grid-area: bottom;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #D0CAC3;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-container {
+    display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: baseline;
-    background-color: #D0CAC3;
-    padding: 2rem 5rem;
   }
 
   .social-logo {
