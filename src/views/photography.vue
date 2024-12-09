@@ -1156,6 +1156,7 @@ export default {
 }
 
 .photography-container {
+  padding: 20px;
   .photography-header-container {
     display: grid;
     grid-template-columns: 1fr 55%;
@@ -1167,7 +1168,7 @@ export default {
       font-size: 28px;
     }
 
-    @media (min-width: 0px) and (max-width: 767px) {
+    @media (min-width: 0px) and (max-width: 800px) {
       display: flex;
       flex-direction: column;
     }
@@ -1196,7 +1197,7 @@ export default {
       display: grid;
       grid-gap: 3px;
 
-      @media (min-width: 0px) and (max-width: 767px) {
+      @media (min-width: 0px) and (max-width: 800px) {
         display: flex;
         flex-direction: column;
       }

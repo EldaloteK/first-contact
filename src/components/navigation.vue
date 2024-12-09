@@ -274,9 +274,14 @@ export default {
   }
 
   @media (min-width: 0px) and (max-width: 800px) {
+    padding-left: 0rem;
+    padding-right: 0rem;
     justify-content: center;
     .name-logo {
       display: none;
+    }
+    .nav-right {
+      max-width: 20rem;
     }
   }
 }

@@ -1,8 +1,5 @@
 <template>
     <div class="contact-container">
-        <CardSmall class="card1" />
-        <CardSmall class="card2" />
-        <CardSmall class="card3" />
         <div class="cabinet-area">
             <svg class="cabinet" width="490px" height="729px" viewBox="0 0 290 629" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -200,21 +197,18 @@
                 </g>
             </svg>
         </div>
-        <div class="wolf-area">
-            <FluffyWolf />
+        <div class="quote-container">
+            <p>
+                “Paying attention is a form of reciprocity with the living world, receiving the gifts with open eyes and open heart.”
+            </p>
+            <div class="quote-by">― Robin Wall Kimmerer, Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants </div>
         </div>
     </div>
 </template>
 
 <script>
-import FluffyWolf from "../components/fluffy-wolf.vue";
-import CardSmall from "../components/card-small.vue";
 export default {
-    name: "Contact",
-    components: {
-        CardSmall,
-        FluffyWolf
-    }
+    name: "Contact"
 };
 </script>
 
@@ -223,30 +217,25 @@ export default {
     box-sizing: border-box;
 }
 
-.wolf-area {
-    grid-area: wolf;
+.contact-container {
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
+    margin: 0px 30px 30px 30px;
+    justify-content: space-between;
 
-.card1 {
-    grid-area: card1;
-    align-self: center;
-}
+    @media (min-width: 0px) and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
 
-.card2 {
-    grid-area: card2;
-    align-self: center;
-}
-
-.card3 {
-    grid-area: card3;
-    align-self: center;
+        .cabinet {
+            display: none;
+        }
+    }
 }
 
 .cabinet {
     box-sizing: border-box;
+    max-height: 600px;
 }
 
 .cabinet-area {
@@ -254,24 +243,13 @@ export default {
     box-sizing: border-box;
 }
 
-.contact-container {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin-top: 30px;
-    padding: 5rem;
-    grid-template-areas:
-        ". card1 card2"
-        "cabinet card3 wolf";
-    
-    @media (min-width: 0px) and (max-width: 800px) {
-      display: flex;
-      flex-direction: column;
-      .cabinet {
-        display: none;
-      }
-    }
+.quote-container {
+    font-size: 35px;
 }
-
+.quote-by {
+    display: flex;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 </style>

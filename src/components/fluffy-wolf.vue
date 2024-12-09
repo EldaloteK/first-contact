@@ -1,5 +1,5 @@
 <template>
-    <svg width="420px" height="450px" viewBox="0 0 203 200" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <svg viewBox="0 0 203 200" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>fluffy-wolf</title>
         <g id="Page-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -357,3 +357,9 @@ export default {
     name: "FluffyWolf"
 };
 </script>
+
+<style lang="scss" scoped>
+    svg {
+        max-width: 420px;
+    }
+</style>

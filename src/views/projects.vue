@@ -61,6 +61,7 @@ export default {
 }
 
 .projects-container {
+  padding: 20px;
   .projects-header-container {
     display: grid;
     grid-template-columns: 55% 1fr;
