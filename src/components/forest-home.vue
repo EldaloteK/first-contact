@@ -1382,7 +1382,7 @@
       </svg>
     </div>
     <div class="forest-home-lower-container" ref="lower-container-ref">
-      <Contact />
+      <!-- <Contact /> -->
       <div class="forest-home-lower-container-left">
         <div class="forest-home-header-text"></div>
         <div class="forest-home-header-news"></div>
